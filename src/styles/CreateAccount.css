@@ -1,0 +1,132 @@
+.overlay {
+    position: fixed;
+    top: 1.5rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .modal-box {
+    background: rgba(204, 188, 188, 0.193);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+  
+    width: 300px;
+    border-radius: 16px;
+    color: hsl(77, 23%, 94%);
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    animation: scaleUp 0.3s ease;
+  }
+
+  .modal-right h2 {
+    color: rgb(252, 252, 246);
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.modal-right .subtitle {
+  display: block; /* span ko new line me lane ke liye */
+  font-size: 1rem;
+  color: #01000a;
+  margin-bottom: 10px;
+}
+  @keyframes scaleUp {
+    from {
+      transform: scale(0.7);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .modal-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  
+    border: none;
+    border-radius: 8px;
+    outline: none;
+  }
+  
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  background: none;
+  border: none;
+  color: hwb(72 97% 1% / 0.904);
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+
+.submit-btn {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 12px;
+  margin-top: 10px;
+  background: linear-gradient(
+    135deg,
+    #20023b,
+    #550214
+  );
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+  .submit-btn:hover {
+    transform: scale(1.05);
+  }
+  
+
+.divider {
+  text-align: center;
+  margin: 10px 0;
+  color: #011a20;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-buttons button {
+  flex: 1;
+  height: 35px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  background: rgb(244, 245, 247);
+  cursor: pointer;
+}
+
+
+.signin-text {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.signin-text a {
+  color: #502503;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.error-msg {
+  color: red;
+  margin: 10px 0;
+}
